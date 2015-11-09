@@ -50,6 +50,9 @@ Route::get('/practice', function() {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::controller('/practice','PracticeController');
+
 Route::get('/debug', function() {
     echo '<pre>';
     echo '<h1>Environment</h1>';
